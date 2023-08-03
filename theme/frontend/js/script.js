@@ -122,7 +122,7 @@ var GUI = (function(){
 		if($('.main-popup-regis').length > 0) {
 			setTimeout(function(){
 				$('.main-popup-regis').fadeIn(300);
-			}, 40000);
+			}, 60000);
 		}
 		$('.frame-frm-regis .close-popup').click(function(event) {
 			event.preventDefault();

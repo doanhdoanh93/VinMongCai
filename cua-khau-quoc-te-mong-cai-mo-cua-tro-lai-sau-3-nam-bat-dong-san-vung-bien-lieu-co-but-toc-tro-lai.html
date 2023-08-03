@@ -56,9 +56,11 @@
     </script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("MJO_yRH5RVaZUVxth");
+            emailjs.init("NFq1iXrYmpCvc-Z2i");
         })();
     </script>
+
+   
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GBW78HKPH"></script>
     <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-6GBW78HKPH');</script>
@@ -21346,20 +21348,20 @@
                 </div>
                 <div class="col-lg-6 col0 position-relative">
                     <div class="main_form right_policyb">
-                        <form
-                            class="register ajaxform" data-success="success" accept-charset="utf-8"><input type="hidden"
-                                name="csrf_tech5s_name" value="3d74e79ac87d3cb0db0592e7c23196c1">
+                        <form id="form2" class="register ajaxform" data-success="success" accept-charset="utf-8"><input
+                                type="hidden" name="csrf_tech5s_name" value="3d74e79ac87d3cb0db0592e7c23196c1">
                             <p class="title-form">ĐĂNG KÝ NHẬN TƯ VẤN</p>
-                            <div class="form-group"><input type="text" name="name" class="form-control" crequired
-                                    text-crequired="Vui lòng nhập họ tên!!!" aria-lable="Tên khách hàng"
+                            <div class="form-group"><input type="text" name="name" id="form2_name" class="form-control form_name crequired
+                                    text-crequired=" Vui lòng nhập họ tên!!!" aria-lable="Tên khách hàng"
                                     placeholder="Họ tên..."></div>
-                            <div class="form-group"><input type="text" name="email" class="form-control" crequired
-                                    text-crequired="Vui lòng nhập email!!!" cregex="\S+@\S+\.\S+"
+                            <div class="form-group"><input type="text" name="email" id="form2_email" class="form-control form_email crequired
+                                    text-crequired=" Vui lòng nhập email!!!" cregex="\S+@\S+\.\S+"
                                     text-cregex="Vui lòng nhập đúng định dạng mail." placeholder="Email..."></div>
-                            <div class="form-group"><input type="text" name="phone" class="form-control" crequired
-                                    text-crequired="Vui lòng nhập thông tin số điện thoại!!!"
+                            <div class="form-group"><input type="text" name="phone" id="form2_phone" class="form-control form_phone crequired
+                                    text-crequired=" Vui lòng nhập thông tin số điện thoại!!!"
                                     aria-lable="Số điện thoại khách hàng" placeholder="Điện thoại..."></div><button
-                                type="submit" class="btn-submit smooth text-center">GỬI CHO CHÚNG TÔI</button>
+                                type="submit" onclick="sendMail('form2')" class="btn-submit smooth text-center">GỬI CHO
+                                CHÚNG TÔI</button>
                         </form>
                     </div>
                 </div>
@@ -21371,23 +21373,25 @@
         <div class="h-100">
             <div class="frame-frm-regis relative"
                 style="background-image: url(theme/frontend/images/1bgdacquyendichvu.jpg); background-repeat: no-repeat; background-size: cover;">
-                <form
-                    class="frm-regis form-dk ajaxform" data-success="success" accept-charset="utf-8"><input
+                <form id="form3" class="frm-regis form-dk ajaxform" data-success="success" accept-charset="utf-8"><input
                         type="hidden" name="csrf_tech5s_name" value="3d74e79ac87d3cb0db0592e7c23196c1">
                     <p class="title-fomr text-center text-uppercase">Nhận thông tin đăng ký</p>
                     <p class="note-frm cl_white f_roboto text-center mb-5">Quý khách vui lòng điền đầy đủ thông tin để
-                        nhận ngay thông tin và bảng giá dự án <strong>DỰ ÁN VINHOMES GOLDEN AVENUE</strong>.</p>
+                        nhận ngay thông tin và bảng giá dự án <strong>DỰ ÁN VINHOMES GOLDEN AVENUE - VINHOMES MÓNG CÁI
+                        </strong>.</p>
                     <div class="form-group relative"><span class="fa fa-user"></span><input type="text" name="name"
-                            class="form-input w-100" crequired text-crequired="Vui lòng nhập họ tên!!!"
-                            aria-lable="Tên khách hàng" placeholder="Họ và tên"></div>
+                            id="form3_name" class="form-input w-100 form_name" crequired
+                            text-crequired="Vui lòng nhập họ tên!!!" aria-lable="Tên khách hàng"
+                            placeholder="Họ và tên"></div>
                     <div class="form-group relative"><span class="fa fa-phone"></span><input type="text" name="phone"
-                            class="form-input w-100" crequired text-crequired="Vui lòng nhập thông tin số điện thoại!!!"
+                            id="form3_phone" class="form-input w-100 form_phone" crequired
+                            text-crequired="Vui lòng nhập thông tin số điện thoại!!!"
                             aria-lable="Số điện thoại khách hàng" placeholder="Số điện thoại"></div>
                     <div class="form-group relative"><span class="fa fa-envelope"></span><input type="text" name="email"
-                            class="form-input w-100" class="form-control" crequired
+                            id="form3_email" class="form-input w-100 form_email" class="form-control" crequired
                             text-crequired="Vui lòng nhập email!!!" cregex="\S+@\S+\.\S+"
                             text-cregex="Vui lòng nhập đúng định dạng mail." placeholder="Email"></div>
-                    <div class="submit d-block py-4 text-center"><button type="submit"
+                    <div class="submit d-block py-4 text-center"><button type="submit" onclick="sendMail('form3')"
                             class="btn-waring smooth text-center">Đăng Ký </button></div>
                 </form><button type="button"
                     class="close-popup d-flex align-items-center justify-content-center smooth"><i class="fa fa-times"
@@ -21395,16 +21399,17 @@
             </div>
         </div>
     </div>
-    <p class="social-fixed d-line-block"><a href="https://www.facebook.com/lienhuongbui1111?mibextid=LQQJ4d" title="Facebook" class="item-social smooth cl_white"
-            target="_blank" rel="noopener"><i class="fa fa-facebook" aria-hidden="true"></i></a><a
-            href="tel:0822381111" title="Hotline" class="item-social smooth cl_white"><i class="fa fa-phone"
-                aria-hidden="true"></i></a><a href="mailto:Lienhuong.vhr@gmail.com" title="Email"
-            class="item-social smooth cl_white"><i class="fa fa-envelope" aria-hidden="true"></i></a><a
-            href="https://zalo.me/0822381111" title="Zalo 0822381111" class="btn-zalo"><span><img
-                    src="theme/frontend/images/zalo.png" alt=""></span></a></p><a href="tel:0822381111"
-        title="Hotline 0822381111" class="btn-call"><span><i class="fa fa-phone"></i></span></a><a
-        title="Click để đăng ký báo giá" class="btn-bao-gia text-center f_opensan smooth"><span
-            class="fa fa-connectdevelop"> </span> Đăng ký báo giá <span class="fa fa-connectdevelop"> </span> </a>
+    <p class="social-fixed d-line-block"><a href="https://www.facebook.com/lienhuongbui1111?mibextid=LQQJ4d"
+            title="Facebook" class="item-social smooth cl_white" target="_blank" rel="noopener"><i
+                class="fa fa-facebook" aria-hidden="true"></i></a><a href="tel:0822381111" title="Hotline"
+            class="item-social smooth cl_white"><i class="fa fa-phone" aria-hidden="true"></i></a><a
+            href="mailto:Lienhuong.vhr@gmail.com" title="Email" class="item-social smooth cl_white"><i
+                class="fa fa-envelope" aria-hidden="true"></i></a><a href="https://zalo.me/0822381111"
+            title="Zalo 0822381111" class="btn-zalo"><span><img src="theme/frontend/images/zalo.png" alt=""></span></a>
+    </p><a href="tel:0822381111" title="Hotline 0822381111" class="btn-call"><span><i
+                class="fa fa-phone"></i></span></a><a title="Click để đăng ký báo giá"
+        class="btn-bao-gia text-center f_opensan smooth"><span class="fa fa-connectdevelop"> </span> Đăng ký báo giá
+        <span class="fa fa-connectdevelop"> </span> </a>
     <footer class="footer" style="background-repeat: no-repeat;background-position: 50%;background-size: cover;">
         <div class="main-footer">
             <div class="container-fluid container-footer">
@@ -21426,8 +21431,10 @@
                                     Email: <a href="mailto:Lienhuong.vhr@gmail.com" class="is-link smooth"
                                         title="Lienhuong.vhr@gmail.com">Lienhuong.vhr@gmail.com</a></p>
                                 <p class="py-3 d-flex align-items-start"><span class="fa fa-globe mr-3"></span> Website:
-                                    <a href="index.html" class="is-link smooth" title="https://vinhomesmongcaigoldenavenue.net">
-                                        https://vinhomesmongcaigoldenavenue.net</a></p>
+                                    <a href="index.html" class="is-link smooth"
+                                        title="https://vinhomesmongcaigoldenavenue.net">
+                                        https://vinhomesmongcaigoldenavenue.net</a>
+                                </p>
                             </div>
                         </div>
                         <div class="footer_maps d-md-block d-none">
@@ -21496,18 +21503,18 @@
                     <div class="col-lg-3 col-md-12 text-center">
                         <p class="title-footer f_sfutrajan title-form">ĐĂNG KÝ THÔNG TIN</p>
                         <div class="form-dk-footer">
-                            <form action="https://vinhomesmongcai.com.vn/gui_thong_tin_chu_dau_tu" method="POST"
-                                class="form-dk ajaxform" data-success="success" accept-charset="utf-8"><input
-                                    type="hidden" name="csrf_tech5s_name" value="3d74e79ac87d3cb0db0592e7c23196c1">
+                            <form id="form4" class="form-dk ajaxform" data-success="success" accept-charset="utf-8">
+                                <input type="hidden" name="csrf_tech5s_name" value="3d74e79ac87d3cb0db0592e7c23196c1">
                                 <div class="form-group"><span class="fa fa-user"></span><input type="text" name="name"
-                                        class="form-input" crequired text-crequired="Vui lòng nhập họ tên!!!"
-                                        aria-lable="Tên khách hàng" placeholder="Họ và tên"></div>
+                                        id="form4_name" class="form-input form_name" crequired
+                                        text-crequired="Vui lòng nhập họ tên!!!" aria-lable="Tên khách hàng"
+                                        placeholder="Họ và tên"></div>
                                 <div class="form-group"><span class="fa fa-envelope"></span><input type="text"
-                                        name="email" class="form-input" class="form-control" crequired
-                                        text-crequired="Vui lòng nhập email!!!" cregex="\S+@\S+\.\S+"
+                                        name="email" id="form4_email" class="form-input form_email" class="form-control"
+                                        crequired text-crequired="Vui lòng nhập email!!!" cregex="\S+@\S+\.\S+"
                                         text-cregex="Vui lòng nhập đúng định dạng mail." placeholder="Email"></div>
                                 <div class="form-group"><span class="fa fa-phone"></span><input type="text" name="phone"
-                                        class="form-input" crequired
+                                        id="form4_phone" class="form-input form_phone" crequired
                                         text-crequired="Vui lòng nhập thông tin số điện thoại!!!"
                                         aria-lable="Số điện thoại khách hàng" placeholder="Số điện thoại"></div>
                                 <p class="footer_frm_title my-3">Loại hình mong muốn:</p>
@@ -21525,9 +21532,9 @@
                                                 name="model[]" value="Nhà Biệt thự Đơn Lập/Song Lập"
                                                 class="mr-lg-4 mr-3">Nhà Biệt thự Đơn Lập/Song Lập</label></div>
                                 </div>
-                                <div class="submit"><button type="submit" class="btn-waring smooth text-center"><span
-                                            class="fa fa-connectdevelop"> </span> Đăng Ký <span
-                                            class="fa fa-connectdevelop"> </span></button></div>
+                                <div class="submit"><button type="submit" onclick="sendMail('form4')"
+                                        class="btn-waring smooth text-center"><span class="fa fa-connectdevelop">
+                                        </span> Đăng Ký <span class="fa fa-connectdevelop"> </span></button></div>
                             </form>
                         </div>
                         <div class="footer_maps d-md-none d-block">

@@ -1,20 +1,25 @@
-function sendMail() {
+function sendMail(formId) {
+  var name = document.getElementById(`${formId}_name`).value;
+  var phone = document.getElementById(`${formId}_phone`).value;
+  var email = document.getElementById(`${formId}_email`).value;
   var params = {
-    name: document.getElementById("name").value,
-    phone: document.getElementById("phone").value,
-    email: document.getElementById("email").value,
+    name: name,
+    phone: phone,
+    email: email
   };
 
-
-const serviceID = "service_2vw8lza";
-const templeId = "template_5akrgsk";
+const serviceID = "service_ognut3z";
+const templeId = "template_7brygr8";
 
 emailjs.send(serviceID, templeId, params).then((res) => {
-  document.getElementById("name").value = "";
-  document.getElementById("phone").value = "";
-  document.getElementById("email").value = "";
+  document.getElementById(`${formId}_name`).value = "";
+  document.getElementById(`${formId}_phone`).value = "";
+  document.getElementById(`${formId}_email`).value = "";
   console.log('res: ', res);
-  alert("Bạn đã gửi thành công")
+  $('.main-popup-regis').fadeOut(300);
 })
-.catch((err)=>console.log('err: ', err));
+.catch((err)=>{
+  console.log('err: ', err)
+  
+});
 }
